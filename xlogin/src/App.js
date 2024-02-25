@@ -12,7 +12,7 @@ function App() {
       setError("");
       setIsSubmitted(true);
     } else {
-      setError("Invalid username and password");
+      setError("Invalid username or password");
       setIsSubmitted(false);
     }
   };
@@ -21,7 +21,7 @@ function App() {
       <h1>Login Page</h1>
       {isSubmitted ? (
         <div>
-          <p>Welcome,{username}</p>
+          <p>Welcome, user</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
